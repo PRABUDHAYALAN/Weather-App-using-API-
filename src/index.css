@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Main Weather Box */
+.weather {
+  place-self: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-bar input {
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 20px;
+  color: #626262;
+  background-color: #ebfffc;
+  font-size: 16px;
+}
+
+.search-bar img {
+  width: 22px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ebfffc;
+  cursor: pointer;
+}
+
+/* Weather Icon */
+.weather-icon {
+  width: 120px;
+  margin: 10px 0;
+}
+
+/* Temperature and Location */
+.temp {
+  color: #fff;
+  font-size: 55px;
+  margin-bottom: 5px;
+}
+
+.location {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Weather Data Section */
+.weather-data {
+  width: 100%;
+  margin-top: 15px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Weather Columns */
+.weather-data .col {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 18px;
+}
+
+.weather-data .col span {
+  display: block;
+  font-size: 14px;
+}
+
+/* Weather Data Icons */
+.weather-data .col img {
+  width: 28px;
+}
+
+/* Error Message */
+.error {
+  color: #ff4f4f;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
 }
